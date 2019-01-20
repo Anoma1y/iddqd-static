@@ -1,0 +1,159 @@
+@import "vars";
+
+.header {
+  width: 100%;
+  height: 100vh;
+  min-height: 620px;
+  position: relative;
+  background-color: $almost-black;
+
+  &-bg {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+  }
+
+  &-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120.85deg, #000 0%, rgba(0, 0, 0, .88) 28.35%, rgba(0, 0, 0, .31) 51.59%, rgba(0, 0, 0, 0) 100%);
+    opacity: .5;
+  }
+
+  &-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+    &_secondary {
+      margin-top: .5em;
+      position: relative;
+    }
+
+    &_break {
+      display: block;
+    }
+
+    &_primary-text,
+    &_secondary-text {
+      font-family: $font-main;
+      color: $white;
+      @media (max-width: $break-xs) {
+        text-align: center;
+      }
+    }
+
+    &_primary-text {
+      font-weight: 700;
+      line-height: 53px;
+      font-size: 48px;
+      margin: 0;
+      @media (max-width: $break-md) {
+        line-height: 59px;
+        font-size: 58px;
+      }
+      @media (max-width: $break-sm) {
+        line-height: 46px;
+        font-size: 45px;
+      }
+      @media (max-width: $break-xs) {
+        line-height: 37px;
+        font-size: 36px;
+      }
+      @media (max-width: $break-low-mobile) {
+        line-height: 31px;
+        font-size: 30px;
+      }
+    }
+
+    &_secondary-text {
+      font-weight: 500;
+      line-height: 1;
+      font-size: 18px;
+      color: #999;
+      @media (max-width: $break-sm) {
+        line-height: 23px;
+        font-size: 15px;
+      }
+      @media (max-width: $break-xs) {
+        line-height: 22px;
+        font-size: 14px;
+      }
+      @media (max-width: $break-low-mobile) {
+        line-height: 20px;
+        font-size: 12px;
+      }
+    }
+
+    &-social {
+      margin-top: 3em;
+
+      &_icon {
+        color: #E8F1F2;
+        transition: color .2s linear;
+        font-size: 1em;
+      }
+
+      &_link {
+        margin-left: .4em;
+        margin-right: .4em;
+
+        &:first-child {
+          margin-left: 0;
+        }
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+        &:hover .header-content-social_icon {
+          color: darken(#E8F1F2, 20%);
+        }
+      }
+
+      @media (max-width: $break-xs) {
+        text-align: center;
+      }
+    }
+
+    &_buttons {
+      margin-top: 2.5em;
+
+      @media (max-width: $break-xs) {
+        display: flex;
+        justify-content: center;
+
+        a {
+          font-size: 14px;
+        }
+      }
+      @media (max-width: $break-low-mobile) {
+        flex-flow: column;
+        margin-top: 2rem;
+
+        a {
+          margin: .5rem 0;
+          padding: .8rem 1rem;
+          font-size: 13px;
+
+          &:first-child {
+            margin-top: 0;
+          }
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Anoma1y</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+    <link rel="stylesheet" href="assets/css/flexboxgrid.min.css">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+      integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href=".<%=htmlWebpackPlugin.files.chunks.main.css %>">
+  </head>
+  <body>
+    <!--[if lte IE 9]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+    <![endif]-->
+    <header class="header">
+      <div class="header-bg" data-src="assets/img/background.jpg"></div>
+      <div class="header-overlay"></div>
+      <div class="header-content">
+        <div class="wrapper">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-xs-10 col-xs-offset-1 col-lg-12 col-lg-offset-0">
+                <div class="row">
+                  <div class="col-xs-12 col-sm-10 col-md-7 col-lg-6 header-content_primary">
+                    <h2 class="header-content_primary-text">
+                      <b class="header-content_break">Hi</b>
+                      <b class="header-content_break">I'm German,</b>
+                      <b class="header-content_break">frontend developer</b>
+                    </h2>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-12 col-sm-8 col-md-6 col-lg-4 header-content_secondary">
+                    <p class="header-content_secondary-text">
+                      JavaScript / TypeScript / React
+                    </p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-12 col-sm-8 col-md-6 col-lg-4 header-content-social">
+                    <a class="header-content-social_link" href="https://www.linkedin.com/in/german-voytekhovich-293504170/" target="_blank">
+                      <i class="header-content-social_icon fab fa-linkedin-in"></i>
+                    </a>
+                    <a class="header-content-social_link" href="https://twitter.com/GVoytekhovich" target="_blank">
+                      <i class="header-content-social_icon fab fa-twitter"></i>
+                    </a>
+                    <a class="header-content-social_link" href="https://steamcommunity.com/profiles/76561193824784458" target="_blank">
+                      <i class="header-content-social_icon fab fa-steam-symbol"></i>
+                    </a>
+                    <a class="header-content-social_link" href="https://t.me/GermanVoytekhovich" target="_blank">
+                      <i class="header-content-social_icon fab fa-telegram-plane"></i>
+                    </a>
+                    <a class="header-content-social_link" href="https://github.com/Anoma1y" target="_blank">
+                      <i class="header-content-social_icon fab fa-github-alt"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-12 header-content_buttons">
+                    <a href="/" class="site_btn site_btn__transparent">My Portfolio</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <script src=".<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
+
+  </body>
+</html>
